@@ -17,7 +17,8 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 9
+# font pango:DejaVu Sans Mono 9
+font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -128,9 +129,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 # bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/tools/paVolume -u
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/tools/paVolume -d
-bindsym XF86AudioMute exec --no-startup-id ~/tools/paVolume -m
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.tools/paVolume -u
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.tools/paVolume -d
+bindsym XF86AudioMute exec --no-startup-id ~/.tools/paVolume -m
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
